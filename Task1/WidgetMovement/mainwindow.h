@@ -2,8 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
+#include <QVector>
+#include <QPushButton>
 
-class QTimer;
+QT_BEGIN_NAMESPACE
+namespace Ui { class MainWindow; }
+QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
@@ -14,6 +19,9 @@ public:
     ~MainWindow();
 
 private:
-    QTimer* m_timer = nullptr;
+    Ui::MainWindow *ui;
+    QTimer *createTimer;
+    QTimer *moveTimer;
+    QVector<QPushButton*> buttons;
 };
 #endif // MAINWINDOW_H
