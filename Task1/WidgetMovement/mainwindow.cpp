@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QRandomGenerator>
-#include <QPushButton>
-#include <QTimer>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -83,5 +81,4 @@ MainWindow::~MainWindow()
     buttons.clear();
     delete ui;
 }
-
 
