@@ -13,6 +13,7 @@ QtApplication {
         "main.cpp",
         "mainwindow.cpp",
         "mainwindow.h",
+        "mainwindow.ui",
     ]
 
     install: true
