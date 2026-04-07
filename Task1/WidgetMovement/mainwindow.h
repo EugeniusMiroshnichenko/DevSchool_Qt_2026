@@ -1,9 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include <QMainWindow>
 #include <QTimer>
-#include <QVector>
 #include <QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -20,8 +18,5 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QTimer *createTimer;
-    QTimer *moveTimer;
-    QVector<QPushButton*> buttons;
 };
 #endif // MAINWINDOW_H
