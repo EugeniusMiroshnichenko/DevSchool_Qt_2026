@@ -1,13 +1,10 @@
 #include "mainwindow.h"
 #include <QRandomGenerator>
-#include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
-
+    resize(300, 600);
     QTimer* createTimer = new QTimer(this);
 
     QObject::connect(createTimer, &QTimer::timeout, [this, createTimer]() {
@@ -49,6 +46,5 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    delete ui;
 }
 
