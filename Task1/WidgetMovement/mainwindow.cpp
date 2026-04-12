@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
             if(button->y() + button->height() >= this->height()) {
                 setStyleSheet("QMainWindow { background-color: red; }");
                 setWindowTitle("YOU LOOSE!");
-                delete button;
+                button->deleteLater();
             }
         });
         moveTimer->start(100);
