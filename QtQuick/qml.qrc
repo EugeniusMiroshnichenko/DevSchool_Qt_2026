@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CustomButton.qml</file>
+        <file>CustomButtonForm.ui.qml</file>
+        <file>MoveTimer.qml</file>
+    </qresource>
+</RCC>
